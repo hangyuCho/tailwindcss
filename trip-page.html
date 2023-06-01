@@ -22,13 +22,13 @@
       class="h-1/6 w-full bg-gradient-to-t from-indigo-200 relative overflow-hidden"
     >
       <!-- navbar -->
-      <nav class="w-full fixed top-0 z-10">
+      <nav class="w-full z-10">
         <div class="container mx-auto py-5 flex justify-between">
           <div class="flex items-center gap-2">
             <span class="text-4xl font-bold text-blue-600">Trip</span>
           </div>
           <ul
-            class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase"
+            class="md:flex space-x-10 text-gray-600 font-bold text-sm uppercase"
           >
             <li class="hover:text-gray-500">
               <a href="#">homepage</a>
@@ -48,7 +48,7 @@
           </ul>
           <img
             src="./img/moon.png"
-            class="hidden md:block w-5 cursor-pointer"
+            class="md:block w-5 cursor-pointer"
             alt=""
           />
           <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
@@ -79,77 +79,411 @@
         </div>
       </nav>
     </div>
-    <!-- search -->
-    <div class="flex">
-      <div class="w-full container mx-auto mt-2">
-        <!-- outside form -->
-        <div class="w-full flex jusify-center">
-          <form class="w-full">
-            <div class="w-full flex">
-              <input
-                class="w-2/3 ring-1 ring-gray-300 h-16 text-2xl px-4"
-                type="input"
-                placeholder="여행지, 명소, 호텔 등으로 검색"
-              />
-              <button class="h-16 w-16 bg-blue-600">
-                <div>🔍</div>
-              </button>
+    <div class="w-full flex flex-col justify-center px-72">
+      <!-- search -->
+      <div class="flex">
+        <div class="w-full container mx-auto mt-2 flex justify-center">
+          <!-- outside form -->
+          <div class="px-6 py-8 w-2/3 shadow-xl jusify-center border-gray-200">
+            <form class="w-full">
+              <div class="flex">
+                <input
+                  class="w-full ring-1 ring-gray-300 h-16 text-2xl px-4"
+                  type="input"
+                  placeholder="여행지, 명소, 호텔 등으로 검색"
+                />
+                <button class="h-16 w-16 bg-blue-600">
+                  <div>🔍</div>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- 도쿄 매력 탐구 -->
+      <div class="w-full flex flex-col py-10">
+        <div class="m-auto w-1/3 rounded-sm shadow-xl">
+          <!-- 버튼 -->
+          <button
+            class="w-full shadow-gray-100 shadow flex items-center justify-between"
+          >
+            <div class="flex items-center">
+              <!-- 아이콘 -->
+              <div class="mx-8 px-6 py-8 bg-indigo-100"></div>
+              <!-- 라벨 -->
+              <div>
+                <span class="text-xl text-blue-600 font-bold">도쿄</span>
+                <span class="px-0.5 text-xl text-gray-600 font-bold">매력</span>
+                <span class="px-0.5 text-xl text-gray-600 font-bold">탐구</span>
+              </div>
             </div>
-          </form>
+            <!-- 더보기 -->
+            <div class="mx-4 p-2 rounded-sm bg-blue-600 text-white">
+              더 보기
+            </div>
+          </button>
         </div>
       </div>
-    </div>
-    <!-- 인기 여행지 -->
-    <div class="w-full flex flex-col">
-      <!-- 탭 -->
-      <ul class="flex">
-        <li class="text-sm p-4 text-blue-600 font-bold cursor-pointer">국내</li>
-        <li class="text-sm p-4 text-gray-600 cursor-pointer">해외</li>
-      </ul>
-      <div class="flex flex-wrap">
-        <!-- 여행지 -->
-        <div
-          class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
-        >
-          <img class="w-full object-cover" src="./img/trip/seoul.webp" alt="" />
-          <p class="absolute bottom-0 text-white">서울</p>
+      <!-- 인기 여행지 -->
+      <div class="w-full flex flex-col">
+        <div class="text-2xl m-auto font-bold text-gray-800">인기 여행지</div>
+        <!-- 탭 -->
+        <div class="flex w-full justify-center">
+          <ul class="flex justify-between w-1/6">
+            <li
+              class="text-xl p-4 text-blue-600 underline underline-offset-8 font-bold cursor-pointer"
+            >
+              국내
+            </li>
+            <li class="text-xl p-4 text-gray-600 cursor-pointer">해외</li>
+          </ul>
         </div>
-        <div
-          class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
-        >
-          <img class="w-full object-cover" src="./img/trip/seoul.webp" alt="" />
-          <p class="absolute bottom-0 text-white">서울</p>
+        <div class="flex flex-wrap">
+          <!-- 여행지 -->
+          <div
+            class="flex w-1/4 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/4 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/4 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/4 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/4 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/4 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/4 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/4 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
         </div>
-        <div
-          class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
-        >
-          <img class="w-full object-cover" src="./img/trip/seoul.webp" alt="" />
-          <p class="absolute bottom-0 text-white">서울</p>
-        </div>
-        <div
-          class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
-        >
-          <img class="w-full object-cover" src="./img/trip/seoul.webp" alt="" />
-          <p class="absolute bottom-0 text-white">서울</p>
-        </div>
-        <div
-          class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
-        >
-          <img class="w-full object-cover" src="./img/trip/seoul.webp" alt="" />
-          <p class="absolute bottom-0 text-white">서울</p>
-        </div>
-        <div
-          class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
-        >
-          <img class="w-full object-cover" src="./img/trip/seoul.webp" alt="" />
-          <p class="absolute bottom-0 text-white">서울</p>
+        <div class="flex w-auto justify-center p-8">
+          <button class="p-2 ring-1 ring-blue-500 text-blue-500" type="button">
+            인기 여행지 더보기
+          </button>
         </div>
       </div>
+      <!-- 트래블로그 -->
+      <div class="w-full flex flex-col">
+        <div class="text-2xl m-auto font-bold text-gray-800">트래블로그</div>
+        <div class="flex flex-wrap">
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+        </div>
+        <div class="flex w-auto justify-center p-8">
+          <button class="p-2 ring-1 ring-blue-500 text-blue-500" type="button">
+            트래블로그 더보기
+          </button>
+        </div>
+      </div>
+      <!-- 트립모먼트 -->
+      <div class="w-full flex flex-col">
+        <div class="text-2xl m-auto font-bold text-gray-800">트립 모먼트</div>
+        <div class="flex flex-wrap">
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+        </div>
+        <div class="flex w-auto justify-center p-8">
+          <button class="p-2 ring-1 ring-blue-500 text-blue-500" type="button">
+            트립모먼트 더보기
+          </button>
+        </div>
+      </div>
+      <!-- 요즘 주목받는 여행지 -->
+      <div class="w-full flex flex-col">
+        <div class="text-2xl m-auto font-bold text-gray-800">
+          요즘 주목받는 여행지
+        </div>
+        <div class="flex flex-wrap">
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+          <div
+            class="flex w-1/3 relative rounded-2 hover:scale-110 p-1 justify-center transition-all"
+          >
+            <img
+              class="w-full object-cover"
+              src="./img/trip/seoul.webp"
+              alt=""
+            />
+            <p class="absolute bottom-0 text-white">서울</p>
+          </div>
+        </div>
+        <div class="flex w-auto justify-center p-8">
+          <button class="p-2 ring-1 ring-blue-500 text-blue-500" type="button">
+            여행 테마 더보기
+          </button>
+        </div>
+      </div>
+      <!-- 풋터 -->
     </div>
-    <!-- 트래블로그 -->
-    <!-- 트립모먼트 -->
-    <!-- 요즘 주목받는 여행지 -->
-    <!-- 풋터 -->
     <script src="./app.js"></script>
   </body>
 </html>
